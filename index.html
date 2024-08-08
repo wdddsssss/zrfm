@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<title>自然分娩的好处</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <style type="text/css">
+        p {
+            font-size: 3vw;
+			text-align: left;
+            padding-left: -2em;
+        }
+        p:first-letter {
+            margin-left: 2em;
+        }
+		h1{
+			font-size: 5vw;
+			text-align: center; 
+		}
+		h2{
+			font-size: 4vw;
+			text-align: left; 
+		}
+		h3{
+			font-size: 3vw;
+			text-align: center; 
+		}
+		div{
+			margin:0 auto;
+			width: 85%;
+			padding: 10px;
+			
+		}
+    </style>
+	
+</head>
+
+<body>
+	
+	<p id="dateTxt"></p>
+	<h1>自然分娩的好处</h1>
+    <div>
+		
+
+
+
+
+
+<p>1、可刺激婴儿脑发育和神经系统发育。</p>
+
+<p>2、通过阴道分娩的刺激，婴儿出生时迅速建立自主呼吸，减少肺部感染。</p>
+
+<p>3、失血量少于剖宫产，有利于产后康复(比剖宫产恢复快)。</p>
+
+<p>4、有利于促进母乳喂养的成功。</p>
+
+<p>5、减少感染、粘连及子宫内膜异位症的发生。</p>
+
+<p>6、缩短住院时间，减少住院费用。</p><br>
+
+ <h1>如何促进自然分娩</h1>
+
+<p>1、选择合适年龄分娩。</p>
+
+<p>2、矫正胎位。</p>
+
+<p>3、孕期体操:如孕期瑜伽。</p>
+
+<p>4、定时做产前检查</p>
+
+<p>5、孕期合理营养，控制体重。</p>
+
+<p> 6、做好分娩前的准备:如参加孕妇学校的学习。</p>
+
+<p>7、分娩时我们可以告诉孕妇一些体位来缓解或减轻由于宫缩引起的疼痛:例如瑜伽球、辅助运动车等。</p>
+
+<p>8、提供陪伴分娩。</p><br>
+
+<h1>剖宫产的风险</h1>
+
+<p>1、婴儿吸入性肺炎的发生率高(新生儿呼吸窘迫)。</p>
+
+<p>2、婴儿可能会出现感知系统失调综合征。</p>
+
+<p>3、产妇失血量一般多于阴道分娩。</p>
+
+<p>4、产妇感染的机会增加，延长恢复时间。</p>
+
+<p>5、产妇术后可发生肠胀气、尿潴留、尿路感染</p>
+
+<p>6、有麻醉意外的可能</p>
+
+<p>7、有导致盆腔脏器粘连的可能。</p>
+
+<p>8、再次妊娠时，有子宫破裂的可能。</p>
+	</div>
+</body>
+</html>
+
+<script>
+    "use strict";
+    const week = ['天', '一', '二', '三', '四', '五', '六'],
+        dom = document.getElementById("dateTxt"),
+        checkTime = i => (i < 10) ? `0${i}` : i; // 在小于10的数字前加一个‘0’
+    let today;
+    
+    function startTime() {
+        today = new Date();
+        dom.innerHTML = `星期${week[today.getDay()]} ：${checkTime(today.getHours())}:${checkTime(today.getMinutes())}:${checkTime(today.getSeconds())}`;
+    }
+    setInterval(startTime, 500); //循环计时
+</script>
+
